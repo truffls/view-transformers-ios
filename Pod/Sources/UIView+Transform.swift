@@ -10,7 +10,7 @@ import UIKit
 import CoreGraphics
 
 extension UIView {
-    var transforms: [CGAffineTransform]? {
+    public var transforms: [CGAffineTransform]? {
         get {
             return [transform]
         }
