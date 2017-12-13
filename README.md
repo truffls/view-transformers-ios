@@ -2,7 +2,7 @@
 
 ![Swift Version](https://img.shields.io/badge/swift-3.2-orange.svg "Swift 3.2")
 ![Platform Compatibility](https://img.shields.io/badge/platform-ios-lightgrey.svg "Platform iOS")
-![Pod version](https://img.shields.io/badge/pod-v1.1.0-blue.svg "Pod version 0.0.1")
+![Pod version](https://img.shields.io/badge/pod-v0.0.1-blue.svg "Pod version 0.0.1")
 
 ViewTransformers lets you pass multiple view transformations as an array to UIView.
 
@@ -11,8 +11,8 @@ ViewTransformers lets you pass multiple view transformations as an array to UIVi
 
 Add following to your `Podfile`:
 
-use_frameworks!
-pod 'ViewTransformers'
+    use_frameworks!
+    pod 'ViewTransformers'
 
 
 ### How to use
