@@ -29,6 +29,7 @@
 		213331421FE198DB00EE8D6F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		213331481FE1991900EE8D6F /* UIView+Transform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Transform.swift"; sourceTree = "<group>"; };
 		2133314B1FE19D9B00EE8D6F /* example.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = example.gif; sourceTree = "<group>"; };
+		2133314C1FE1A47400EE8D6F /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				2133314B1FE19D9B00EE8D6F /* example.gif */,
+				2133314C1FE1A47400EE8D6F /* logo.png */,
 			);
 			path = "readme-images";
 			sourceTree = "<group>";

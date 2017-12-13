@@ -1,4 +1,4 @@
-# ViewTransformers
+![alt text](https://github.com/truffls/view-transformers-ios/raw/master/readme-images/logo.png "View Transformers")
 
 ![Swift Version](https://img.shields.io/badge/swift-3.2-orange.svg "Swift 3.2")
 ![Platform Compatibility](https://img.shields.io/badge/platform-ios-lightgrey.svg "Platform iOS")
