@@ -9,7 +9,9 @@ Pod::Spec.new do |s|
     s.source = { :git => "https://github.com/truffls/view-transformers-ios.git", :tag => "0.0.1" }
     s.source_files = "Pod/**/*.swift"
     s.ios.deployment_target = "9.0"
-    s.ios.frameworks = 'UIKit'
+    s.ios.frameworks = [
+        'UIKit', 'CoreGraphics'
+    ]
     s.requires_arc = true
 end
 
