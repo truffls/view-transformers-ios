@@ -25,11 +25,14 @@ You can easily pass multiple view transformations to a UIView by using the `tran
         CGAffineTransform(translationX: 100, y: -145)
     ]
 
+Reading the transforms property only returns the merged transformations as one in a one-item-array.
+
+
 ### Example
 
 ![alt text](https://github.com/truffls/view-transformers-ios/raw/master/readme-images/example.gif "Example")
 
-Used code for example:
+Used code for the example:
 
     func playAnimation() {
         UIView.animate(withDuration: 1.0, delay: 1.0, options: .curveLinear, animations: {

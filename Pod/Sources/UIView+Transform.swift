@@ -2,7 +2,7 @@
 //  UIView+Transform.swift
 //  Transformers-iOS
 //
-//  Created by Lukas Würzburger on 7/19/17.
+//  Created by Lukas Würzburger on 12/13/17.
 //  Copyright © 2017 Truffls GmbH. All rights reserved.
 //
 
@@ -12,7 +12,7 @@ import CoreGraphics
 extension UIView {
     var transforms: [CGAffineTransform]? {
         get {
-            return nil
+            return [transform]
         }
         set {
             var newTransform: CGAffineTransform?
@@ -30,12 +30,3 @@ extension UIView {
     }
 }
 
-/******
- * Example
-
- view.transforms = [
-     CGAffineTransform(scaleX: 0.5, y: 0.5),
-     CGAffineTransform(rotationAngle: -1.0),
-     CGAffineTransform(translationX: 0, y: -25)
- ]
- */
