@@ -1,8 +1,8 @@
 ![alt text](https://github.com/truffls/view-transformers-ios/raw/master/readme-images/logo.png "View Transformers")
 
-![Swift Version](https://img.shields.io/badge/swift-3.2-orange.svg "Swift 3.2")
+![Swift Version](https://img.shields.io/badge/swift-4.1-orange.svg "Swift 4.1")
 ![Platform Compatibility](https://img.shields.io/badge/platform-ios-lightgrey.svg "Platform iOS")
-![Pod version](https://img.shields.io/badge/pod-v0.0.4-blue.svg "Pod version 0.0.4")
+![Pod version](https://img.shields.io/badge/pod-v1.0.0-blue.svg "Pod version 1.0.0")
 
 ViewTransformers lets you pass multiple view transformations as an array to UIView.
 
