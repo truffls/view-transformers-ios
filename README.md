@@ -2,7 +2,7 @@
 
 ![Swift Version](https://img.shields.io/badge/swift-4.1-orange.svg "Swift 4.1")
 ![Platform Compatibility](https://img.shields.io/badge/platform-ios-lightgrey.svg "Platform iOS")
-![Pod version](https://img.shields.io/badge/pod-v1.0.0-blue.svg "Pod version 1.0.0")
+![Pod version](https://img.shields.io/badge/pod-v1.1.0-blue.svg "Pod version 1.1.0")
 
 ViewTransformers lets you pass multiple view transformations as an array to UIView.
 
@@ -47,9 +47,7 @@ func playAnimation() {
         ]
     }, completion: { _ in
         UIView.animate(withDuration: 1.0, delay: 1.0, options: .curveLinear, animations: {
-            self.myView.transforms = [
-                CGAffineTransform(scaleX: 1, y: 1)
-            ]
+            self.myView.transforms = nil
         }, completion: { _ in
             self.playAnimation()
         })
