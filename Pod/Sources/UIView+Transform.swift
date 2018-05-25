@@ -10,23 +10,42 @@ import UIKit
 import CoreGraphics
 
 extension UIView {
+
+    /**
+     Applies multiple `CGAffineTransform`s at once.
+     Set it to `nil` or use the `resetTransforms` method to reset the transformation to the inital state.
+     */
     public var transforms: [CGAffineTransform]? {
-        get {
-            return [transform]
-        }
+        get { return [transform] }
         set {
-            var newTransform: CGAffineTransform?
-            newValue?.forEach({
-                if let t = newTransform {
-                    newTransform = t.concatenating($0)
-                } else {
-                    newTransform = $0
-                }
-            })
-            if let newTransform = newTransform {
-                transform = newTransform
+            if let new = newValue, new.count > 0 {
+                transform = concatenatedTransforms(new)!
+            } else {
+                transform = resetTransform
             }
         }
+    }
+
+    public func resetTransforms() {
+        transforms = nil
+    }
+
+    // MARK: - Helper
+
+    private func concatenatedTransforms(_ transforms: [CGAffineTransform]) -> CGAffineTransform? {
+        var newTransform: CGAffineTransform?
+        transforms.forEach({
+            if let transform = newTransform {
+                newTransform = transform.concatenating($0)
+            } else {
+                newTransform = $0
+            }
+        })
+        return newTransform
+    }
+
+    private var resetTransform: CGAffineTransform {
+        return CGAffineTransform(scaleX: 1, y: 1)
     }
 }
 

@@ -32,9 +32,7 @@ class ViewController: UIViewController {
             ]
         }, completion: { _ in
             UIView.animate(withDuration: 1.0, delay: 1.0, options: .curveLinear, animations: {
-                self.myView.transforms = [
-                    CGAffineTransform(scaleX: 1, y: 1)
-                ]
+                self.myView.transforms = nil
             }, completion: { _ in
                 self.playAnimation()
             })
